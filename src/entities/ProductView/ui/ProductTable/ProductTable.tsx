@@ -9,6 +9,7 @@ type ProductProps = {
 export default function ProductTable({ products }: ProductProps) {
   return (
     <WrapperProduct>
+      {products.length === 0 && <p>The product does not exist.</p>}
       {products.map((product) => (
         <StyledLink key={product.id} to={`/info/${product.id}`}>
           <Product product={product} />
