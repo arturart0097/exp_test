@@ -5,8 +5,8 @@ import { ProductInterface } from "../../../shared/types/ProductTypes";
 export interface ProductFilterState {
   products: ProductInterface[];
   selectedCategory: string;
-  minPrice: number | "";
-  maxPrice: number | "";
+  minPrice: number | null;
+  maxPrice: number | null;
   sortOrder: "asc" | "desc" | "normal";
   searchName: string | "";
 }
@@ -14,8 +14,8 @@ export interface ProductFilterState {
 const initialState: ProductFilterState = {
   products: [],
   selectedCategory: "All",
-  minPrice: "",
-  maxPrice: "",
+  minPrice: null,
+  maxPrice: null,
   sortOrder: "normal",
   searchName: "",
 };
@@ -51,12 +51,10 @@ const productFilterSlice = createSlice({
 
 // Функція для сортування та фільтрації продуктів. Спрацьовує коли змінюється один з стейтів
 
-export const selectFilteredAndSortedProducts = async (state: {
+export const selectFilteredAndSortedProducts = (state: {
   productFilter: ProductFilterState;
-}): Promise<ProductInterface[]> => {
+}): ProductInterface[] => {
   const { products, selectedCategory, sortOrder, searchName } = state.productFilter;
-
-  await new Promise((resolve) => setTimeout(resolve, 500));
 
   return products
     .filter(
@@ -70,6 +68,7 @@ export const selectFilteredAndSortedProducts = async (state: {
       return 0;
     });
 };
+
 
 export const { setCategory, setSortOrder, setSearchName } =
   productFilterSlice.actions;

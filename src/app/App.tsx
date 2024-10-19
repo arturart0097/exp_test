@@ -1,4 +1,4 @@
-import { Suspense, useEffect } from "react";
+import { Suspense } from "react";
 import { AppRouter } from "./provider/router";
 import "./styles/index.css";
 import { Loader } from "../widgets/Loader";
