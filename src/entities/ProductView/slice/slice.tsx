@@ -23,7 +23,7 @@ const initialState: ProductFilterState = {
 export const fetchProducts = createAsyncThunk(
   "productFilter/fetchProducts",
   async () => {
-    const response = await axios.get("../../../../public/MOCK_PRODUCTS.json");
+    const response = await axios.get("/MOCK_PRODUCTS.json");
     return response.data;
   }
 );
