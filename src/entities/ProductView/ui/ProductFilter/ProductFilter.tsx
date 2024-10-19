@@ -28,6 +28,7 @@ export const ProductFilter = () => {
     }
   };
 
+  // Функція для сортування по ціні
   const handleSortOrderChange = (order: "asc" | "desc") => {
     const newSortOrder = lastSortOrder === order ? "normal" : order;
     dispatch(setSortOrder(newSortOrder));
@@ -53,7 +54,7 @@ export const ProductFilter = () => {
         </SelectStyle>
 
         <InputStyle
-          placeholder="Enter product"
+          placeholder="Search product"
           value={inputValue}
           onChange={handleInputChange}
         />
@@ -62,9 +63,9 @@ export const ProductFilter = () => {
         value={lastSortOrder}
         onChange={(e) => handleSortOrderChange(e.target.value as "asc" | "desc")}
       >
-        <option value="normal">Any</option>
-        <option value="asc">Min</option>
-        <option value="desc">Max</option>
+        <option value="normal">Sort by</option>
+        <option value="asc">Sort min to max</option>
+        <option value="desc">Sort max to min</option>
       </SelectStyle>
     </FilterWrapper>
   );

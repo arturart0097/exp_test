@@ -49,6 +49,8 @@ const productFilterSlice = createSlice({
   },
 });
 
+// Функція для сортування та фільтрації продуктів. Спрацьовує коли змінюється один з стейтів
+
 export const selectFilteredAndSortedProducts = async (state: {
   productFilter: ProductFilterState;
 }): Promise<ProductInterface[]> => {
