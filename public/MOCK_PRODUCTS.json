@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 999.99,
+    "description": "A high-performance laptop",
+    "category": "Electronics",
+    "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08611463.png"
+  },
+  {
+    "id": 2,
+    "name": "Smartphone",
+    "price": 699.99,
+    "description": "A feature-packed smartphone",
+    "category": "Electronics",
+    "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08611463.png"
+  },
+  {
+    "id": 3,
+    "name": "Headphones",
+    "price": 199.99,
+    "description": "Noise-cancelling headphones",
+    "category": "Accessories",
+    "image": "https://pngimg.com/uploads/headphones/headphones_PNG101938.png"
+  },
+  {
+    "id": 4,
+    "name": "Smartwatch",
+    "price": 249.99,
+    "description": "A stylish smartwatch with health tracking",
+    "category": "Wearables",
+    "image": "https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-the-smartwatch-banner-png-image_11919210.png"
+  },
+  {
+    "id": 5,
+    "name": "Tablet",
+    "price": 399.99,
+    "description": "A versatile tablet for work and play",
+    "category": "Electronics",
+    "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08611463.png"
+  },
+  {
+    "id": 6,
+    "name": "Bluetooth Speaker",
+    "price": 149.99,
+    "description": "Portable speaker with great sound quality",
+    "category": "Accessories",
+    "image": "https://pngimg.com/uploads/headphones/headphones_PNG101938.png"
+  },
+  {
+    "id": 7,
+    "name": "Monitor",
+    "price": 299.99,
+    "description": "A 24-inch Full HD monitor",
+    "category": "Electronics",
+    "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08611463.png"
+  },
+  {
+    "id": 8,
+    "name": "Wireless Mouse",
+    "price": 49.99,
+    "description": "Ergonomic wireless mouse",
+    "category": "Accessories",
+    "image": "https://pngimg.com/uploads/headphones/headphones_PNG101938.png"
+  },
+  {
+    "id": 9,
+    "name": "Gaming Keyboard",
+    "price": 89.99,
+    "description": "Mechanical keyboard with customizable keys",
+    "category": "Accessories",
+    "image": "https://pngimg.com/uploads/headphones/headphones_PNG101938.png"
+  },
+  {
+    "id": 10,
+    "name": "External Hard Drive",
+    "price": 99.99,
+    "description": "1TB external hard drive for data storage",
+    "category": "Storage",
+    "image": "https://pngimg.com/uploads/hard_disc/Hard%20disc%20PNG,%20hard%20drive%20PNG%20images%20free%20download,%20HDD%20PNG_PNG12038.png"
+  }
+]

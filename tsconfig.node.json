@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["jest"] // You can add jest here if you have Node tests
+  },
+  "include": ["vite.config.ts"], // Keeping your vite config file included
+  "exclude": ["node_modules"]
+}

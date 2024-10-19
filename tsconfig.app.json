@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["jest", "@testing-library/jest-dom"], // Add these types for testing
+    "jsx": "react-jsx" // Ensure JSX support
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"], // Adjust based on your file structure
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.spec.tsx"]
+}
